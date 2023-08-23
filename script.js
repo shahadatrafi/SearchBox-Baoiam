@@ -44,3 +44,25 @@ function updateCountdown() {
     countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m `;
   }
 }
+
+// Time
+const timeElement = document.getElementById("time");
+let timeFormat = 12; // Default to 12-hour format
+
+function updateTime() {
+  const now = new Date();
+
+  if (timeFormat === 24) {
+    timeElement.textContent = now.toLocaleTimeString("en-US", { hour12: false });
+  } else {
+    timeElement.textContent = now.toLocaleTimeString("en-US");
+  }
+}
+
+timeElement.addEventListener("click", () => {
+  timeFormat = (timeFormat === 12) ? 24 : 12;
+  updateTime();
+});
+
+updateTime();
+setInterval(updateTime, 1000);

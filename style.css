@@ -45,6 +45,7 @@ button {
   border-radius: 3px;
   color: white;
   cursor: pointer;
+  margin: 8px 0;
 }
 
 button:hover {
@@ -146,4 +147,11 @@ li {
 
 .right-container{
     width: 20%;
+    margin-top: 5%;
+}
+#time {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #eee;
+  text-align: center;
 }
