@@ -33,7 +33,7 @@ body {
 input {
   width: 90%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -45,7 +45,7 @@ button {
   border-radius: 3px;
   color: white;
   cursor: pointer;
-  margin: 8px 0;
+ 
 }
 
 button:hover {
