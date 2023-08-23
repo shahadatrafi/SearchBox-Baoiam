@@ -12,7 +12,20 @@
   </head>
   <body>
     <section id="main-container">
-        <div id="left-container"></div>
+        <div id="left-container">
+            <div class="card">
+                <h1> (+) Add Note</h1>
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button id="addButton">Add</button>
+                <ul id="taskList"></ul>
+              </div>
+              <div class="card">
+                <h1>Countdown Timer</h1>
+                <label for="datepicker">Select a date and time:</label>
+                <input type="datetime-local" id="datepicker">
+                <div id="countdown"></div>
+              </div>
+        </div>
     <div class="search-container">
         <div class="search-bar">
             <input
@@ -130,11 +143,30 @@
                 </a>
                 <a class="delete-icon">X</a>
             </div>
+            <div class="icon">
+                <a href="https://www.example18.com" target="_blank">
+                    <img src="./images/assets/asset%2019.svg" alt="Icon 18">
+                </a>
+                <a class="delete-icon">X</a>
+            </div>
+            <div class="icon">
+                <a href="https://www.example18.com" target="_blank">
+                    <img src="./images/assets/asset%2020.svg" alt="Icon 18">
+                </a>
+                <a class="delete-icon">X</a>
+            </div>
+            <div class="icon">
+                <a href="https://www.example18.com" target="_blank">
+                    <img src="./images/assets/asset%200.svg" alt="Icon 18">
+                </a>
+                <a class="delete-icon">X</a>
+            </div>
         </div>
     </div>
     <div class="right-container">
         
     </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
