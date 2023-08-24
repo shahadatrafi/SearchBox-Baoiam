@@ -47,7 +47,7 @@ function updateCountdown() {
 
 // Time
 const timeElement = document.getElementById("time");
-let timeFormat = 12; // Default to 12-hour format
+let timeFormat = 12; 
 
 function updateTime() {
   const now = new Date();
